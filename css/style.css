@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  width: auto;
+  height: 80px;
+  background: #2C5EDE;
+  box-shadow: 0px 1px 12px 0px #00000033;
+  border-radius: 0px 0px 50px 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  max-width: 143px;
+  height: auto;
+}
+
+.navbar {
+  margin-right: 85px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  padding: 6px;
+  background-color: #fff;
+  color: #2C5EDE;
+  border-radius: 2px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      max-width: 220px;
+      top: 80px;
+      right: 0;
+      left: 18px;
+      z-index: 1;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 0px 0px 10px 10px;
+  }
+
+  .nav-list li {
+      margin: 2px 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #1FC4CC;
+  }
+
+  .nav-list.active {
+      display: flex;
+  }
+
+  .nav-link {
+      color: #2C5EDE;
+      padding: 10px 20px;
+      text-align: center;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+}
+
+/* Conteudo Main */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Banner */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.active {
+  display: block;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: #c9c9c987;
+  color: #bbbaba;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 28px;
+  transition: background-color 0.3s;
+}
+
+.prev {
+  left: 18px;
+}
+
+.next {
+  right: 18px;
+}
+
+button:hover {
+  background: #383838;
+}
+
+
+/* Section */
+.section-card {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-card img {
+  max-width: 390px;
+  max-height: 420px;
+}
+.titulo {
+  max-width: 580px;
+  max-height: 420px;
+}
+
+.section-card h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 61px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 710px) {
+  .section-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.section-card h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #494949;
+}
+
+@media only screen and (max-width: 428px) {
+  .section-card h1 {
+    font-size: 44px;
+}
+  .section-card h2 {
+      font-size: 20px;
+  }
+  .section-card img {
+    max-width: 333px;
+    max-height: 358px;
+}
+}
+
+/* Artigos */
+.article-cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-title {
+  text-align: center;
+  font-size: 52px;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: rgb(100, 237, 191) 0px -0.5em inset;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  max-width: 540px;
+  max-height: 380px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
+
+a {
+  display: inline-block;
+  background-color: #2C5EDE;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #1A3DAB;
+}
+
+@media only screen and (max-width: 710px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
