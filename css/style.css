@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
@@ -203,6 +203,7 @@ button:hover {
   font-size: 52px;
   line-height: 61px;
   color: #000000;
+  margin-bottom: 1rem;
 }
 
 .section-card h2 {
@@ -284,12 +285,13 @@ button:hover {
 
 .card h3 {
   font-size: 24px;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .card p {
   font-size: 16px;
   color: #555;
+  margin-bottom: 1rem;
 }
 
 .write {
@@ -359,7 +361,7 @@ button:hover {
   color: #fff;
   font-weight: 400;
   font-size: 20px;
-  padding: 15px 0px 0px 15px;
+  padding: 0px 0px 0px 15px;
 }
 
 .social-icons {
@@ -367,7 +369,7 @@ button:hover {
 }
 
 .social-icons img {
-  padding: 0 10px;
+  margin-left: 1rem;
   width: 30px;
   height: 30px;
 }
@@ -378,6 +380,7 @@ button:hover {
     font-size: 14px;
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
   .social-icons {
     margin-left: 0;
